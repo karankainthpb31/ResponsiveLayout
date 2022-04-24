@@ -1,0 +1,160 @@
+html {
+    background-color: rgb(245, 245, 245);
+}
+
+
+header{
+    display: flex;
+}
+header > div.heading> h2 {
+    margin: 20px;
+    margin-top: 30px;
+    margin-right: 300px;
+}
+header >div.nav > nav > ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: right;
+    flex: 1 1 300px;
+}
+header >div.nav> nav > ul >li{
+    display: inline-flex;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: bolder;
+}
+
+
+
+
+.Profile {
+    display: block;
+    float : right;
+    clear: left; 
+    margin: 50px;
+    margin-top: 20px;
+    width: 200px;
+}
+section > p {
+    margin: 50px;
+    height: 200px;
+}
+
+
+article {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+body > h2.portfolio {
+    text-align: center;
+
+}
+article > div > img {
+   
+    width: 400px;   
+}
+article > div >p {
+    width: 250px;
+    padding: 30px;
+}
+article > div > h3{
+    text-align: center;
+}
+article > div {
+    margin-left: 25px;
+}
+
+
+footer >  h4{
+    text-align: center;
+    padding: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top:50px;
+    padding-bottom: 20px;
+    font-size: large;
+}
+footer >p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    color: grey;
+    font-size: x-large;
+    margin: 10px 150px 50px 150px;
+
+
+}
+footer > p.phone > a, footer > p.Email > a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+footer >div.display> label.one{
+    display: block;
+    float: left;
+    clear: right;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+footer >div.display> label.two{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+footer > div.footer{
+    display: flex;
+}
+footer > div.footer > h2 {
+    margin: 20px;
+    margin-top: 30px;
+}
+footer > div.footer> nav.last > ul.lastList{
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: right;
+}
+footer > div.footer > nav.last > ul.lastList >li{
+    display: inline-flex;
+    margin: 20px;
+}
+
+
+
+
+
+
+@media only screen and (min-width:480px){
+    div.display{
+        display: none;
+    }
+    header > div.nav > ul {
+        display: flex;
+    }
+    header > div.nav > ul > li{
+        flex-direction: column;
+
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    footer > div.footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:764px){
+    header {
+        flex-flow: row wrap;
+    }
+    header > div.heading > h2 {
+        text-align: center;
+    }
+}
